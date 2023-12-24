@@ -1,0 +1,52 @@
+/* Hide scrollbar for Chrome, Safari, and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+html {
+    scrollbar-width: none;
+}
+
+body {
+    background-image: url('https://github.com/Benjihunt97/Todo-list/blob/main/bg-desktop-dark.jpg?raw=true');
+    background-repeat: no-repeat;
+    background-color: #181824;
+    
+}
+
+.list {
+    scrollbar-width: none;
+}
+
+.list li {
+    background: #25273C;
+    padding: 15px 25px;
+    color: white;
+}
+
+.item-list.dark {
+    border: 1px solid #181824;
+    color: #181824;
+    background: white;
+}
+
+
+
+body.dark {
+    background: url('https://github.com/Benjihunt97/Todo-list/blob/main/bg-desktop-dark.jpg?raw=true') no-repeat;
+    background-color: #25273C;
+    color: white;
+}
+
+body.light {
+    background: url('https://github.com/Benjihunt97/Todo-list/blob/main/bg-desktop-light.jpg?raw=true') no-repeat;
+    background-color: white;
+    color: #25273C;
+}
+
+@media (max-width: 640px) {
+    .todo {
+        width: 100%;
+    }
+}
