@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e1428b0a9e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>TODO -list</title>
+</head>
+<body class="grid place-items-center">
+
+    <div class="todo w-[600px] p-7 mt-16">
+        <header class="mb-24">
+            <h1 class="flex justify-between items-center text-4xl font-bold mb-12 tracking-[8px] text-white">
+                TODO
+
+                <span class="toggle-theme text-2xl">
+                    <i class="fa fa-sun"></i>
+                </span>
+            </h1>
+
+            <div class="add-item flex p-3 bg-[#25273C] rounded-md">
+                <button id="add-new-item" class="grid place-items-center border border-neutral-500 w-[25px] h-[25px] rounded-full text-sm text-white">
+                    <i class="fa fa-check hidden"></i>
+                </button>
+                <input type="text" class="bg-transparent text-white ml-2 focus:border-none focus:outline-none" id="new-item" placeholder="Create a new task...">
+            </div>
+        </header>
+
+        <div class="w-full list-box overflow-y-hidden">
+
+            <ul class="list flex flex-col gap-2 min-h-[260px] max-h-[260px] overflow-y-scroll" id="sortableList">
+
+            </ul>
+
+            <div class="text-xs text-white bg-[#25273C] p-2 px-8 mt-2 rounded-md flex items-center justify-between">
+                <p class="item-num">0 items left</p>
+
+                <ul class="flex gap-4">
+                    <li>All</li>
+                    <li>Active</li>
+                    <li>Completed</li>
+                </ul>
+
+                <p>Clear completed</p>
+            </div>
+        </div>
+    </div>
+    
+  <script type="text/javascript"></script>
+</body>
+</html>
