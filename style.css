@@ -48,6 +48,6 @@ body.light {
 
 @media (max-width: 640px) {
     .todo {
-        width: 100%;
+        width: 100% !important;
     }
 }
